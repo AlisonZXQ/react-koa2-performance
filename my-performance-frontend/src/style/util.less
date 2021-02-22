@@ -1,0 +1,35 @@
+.loop(@counter) when (@counter >= 0) {
+  .loop((@counter - 1));    // next iteration
+  @num: @counter * 10;
+  .u-mg@{num} {
+    margin: @num * 1px;    
+  }
+  .u-mgt@{num} {
+    margin-top: @num * 1px;
+  }
+  .u-mgb@{num} {
+    margin-bottom: @num * 1px;
+  }
+  .u-mgl@{num} {
+    margin-left: @num * 1px;
+  }
+  .u-mgr@{num} {
+    margin-right: @num * 1px;
+  }
+  .u-pd@{num} {
+    padding: @num * 1px;    
+  }
+  .u-pdt@{num} {
+    padding-top: @num * 1px;
+  }
+  .u-pdb@{num} {
+    padding-bottom: @num * 1px;
+  }
+  .u-pdl@{num} {
+    padding-left: @num * 1px;
+  }
+  .u-pdr@{num} {
+    padding-right: @num * 1px;
+  }
+}
+.loop(5);

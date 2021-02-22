@@ -1,0 +1,39 @@
+:local(.style) {
+  padding: 0;
+  margin : 0;
+
+  .container {
+    display : flex;
+    position: absolute;
+    top     : 56px;
+    right   : 0;
+    bottom  : 0;
+    left    : 0;
+
+    .sider {
+      flex      : 0 0 156px;
+      position  : relative;
+      box-shadow: 2px 0 8px 0 rgba(25, 34, 46, 0.08);
+      z-index   : 99;
+      overflow-y: auto;
+      overflow-x: hidden;
+    }
+
+    .main {
+      flex      : 1 1 auto;
+      overflow  : auto;
+      background: #F4F5F7;
+    }
+  }
+
+  .header {
+    display         : flex;
+    justify-content : space-between;
+    height          : 56px;
+    line-height     : 56px;
+    background-color: #ffffff;
+    position        : relative;
+    box-shadow      : 0 2px 8px 0 rgba(25, 34, 46, 0.08);
+    z-index         : 999;
+  }
+}
